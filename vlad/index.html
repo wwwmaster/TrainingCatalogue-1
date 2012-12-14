@@ -1,0 +1,263 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Accordion - Sortable</title>
+    	<link href="css/cupertino/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+    /* IE has layout issues when sorting (see #5413) */
+    .group { zoom: 1 }
+    </style>
+    <script>
+    $(function() {
+    	$( "#button" ).button();
+    	var icons={
+    		
+    		header: "ui-icon-plus",
+    		activeHeader:"ui-icon-minus"
+    	};
+        $( "#accordion" )
+            .accordion({
+                header: "> div > h3",collapsible: true,active:false, heightStyle:"content",
+                icons:icons
+            });
+            var i=0;
+            $( document ).tooltip();
+            $( ".openclose" ).show(400);
+            $( '.ui-accordion-header-icon' ).removeClass( "ui-icon-plus" );
+            $( '.ui-accordion-header-icon' ).addClass( "ui-icon-minus" );
+            var y=0;
+            $("#button").click(function() {
+            	//alert(y);
+            		//$( "#button" ).text("Close all");
+				if (y==0)
+				{
+				$( '.ui-accordion-header-icon' ).addClass( "ui-icon-plus" );
+           		$( '.ui-accordion-header-icon' ).removeClass( "ui-icon-minus" );
+					y=1;
+					
+				}
+				else if (y==1)
+				{
+					
+						$( '.ui-accordion-header-icon' ).addClass( "ui-icon-minus" );
+						$( '.ui-accordion-header-icon' ).removeClass( "ui-icon-plus" );
+           		y=0;
+					
+				}
+           		
+            	//$( '.ui-accordion-header-icon' ).removeClass( "ui-icon-plus" );
+            	$( ".openclose" ).toggle(400);
+            	$( ".time" ).toggle(400);
+            	
+   			
+			}
+			
+			
+			);
+			
+			$(".star li").hover(
+				function() {
+            	
+            	$( this ).addClass( "ui-state-hover" );
+   			
+			},function() {
+            	
+            	//$( this ).addClass( "ui-state-hover" );
+   			$( this ).removeClass( "ui-state-hover" );
+			}
+			
+			);
+           // $( ".ui-accordion-content" )
+      
+    })
+    
+    </script>
+</head>
+<body>
+ <h1>Hot trainings</h1>
+ <button id="button">Show/Close all sections</button>
+<div id="accordion">
+    <div class="group">
+        <h3>JavaScript <b title="New Training!" class="ui-icon ui-icon-flag"></b> &nbsp; 
+        	<i class="time">Time remaining: 01:10:45 </i> </h3>
+		 		
+			    		
+        <div class="openclose">
+            <p>
+            	<h3>Javascript training 
+            	
+            	</h3>
+            	
+            	<div class="teacher">
+            		<b>Techer:</b>
+            		<!--<img src="img/f1.jpg">-->Vasyl Lupynis<img height="30px" width="30px" src="img/f1.jpg">
+            	</div>	
+            	<div class="divRaiting">
+            		<b>Raiting:</b>
+	            		<ul class="star" >
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		
+	            		</ul>
+            	</div>	
+            	<div class="info">
+            		<b>Info:</b>&nbsp; Powerful course of JavaScript basics. <a href="#">Read</a>
+            	</div>		
+            		</p>
+        </div>
+    </div>
+    <div class="group">
+        <h3>Java  
+        	<i class="time">Time remaining: 01:10:45 </i></h3>
+        <div class="openclose">
+            <p>
+            	<h3>Java training 
+            	
+            	</h3>
+            	
+            	<div class="teacher">
+            		<b>Techer:</b>
+            		<!--<img src="img/f1.jpg">-->Yaroslav Harasym<img height="30px" width="30px" src="img/gar.jpg">
+            	</div>	
+            	<div class="divRaiting">
+            		<b>Raiting:</b>
+	            		<ul class="star" >
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		
+	            		</ul>
+            	</div>	
+            	<div class="info">
+            		<b>Info:</b>&nbsp; Powerful course of Java basics. <a href="#">Read</a>
+            	</div>		
+            	 </p>
+        </div>
+    </div>
+    <div class="group">
+        <h3>Objective-C 
+        	<i class="time">Time remaining: 01:10:45 </i></h3>
+        <div class="openclose">
+            <p>
+            	
+            	<h3>Objective-C training 
+            	
+            	</h3>
+            	
+            	<div class="teacher">
+            		<b>Techer:</b>
+            		<!--<img src="img/f1.jpg">-->Andriy Korkuna<img height="30px" width="30px" src="img/gar.jpg">
+            	</div>	
+            	<div class="divRaiting">
+            		<b>Raiting:</b>
+	            		<ul class="star" >
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		
+	            		</ul>
+            	</div>	
+            	<div class="info">
+            		<b>Info:</b>&nbsp; Powerful course of Objective-C basics. <a href="#">Read</a>
+            	</div>	
+            	
+            </p>
+          
+        </div>
+    </div>
+    <div class="group">
+        <h3>CSH  &nbsp; 
+        	<i class="time">Time remaining: 01:10:45 </i></h3>
+        <div class="openclose">
+            <p>
+            	
+            	<h3>CSH training 
+            	
+            	</h3>
+            	
+            	<div class="teacher">
+            		<b>Techer:</b>
+            		<!--<img src="img/f1.jpg">-->Ihor Kohut<img height="30px" width="30px" src="img/gar.jpg">
+            	</div>	
+            	<div class="divRaiting">
+            		<b>Raiting:</b>
+	            		<ul class="star" >
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		<li class="ui-state-default ui-corner-all" >
+		            			<span class="ui-icon ui-icon-star"></span>
+		            		</li>
+		            		
+	            		</ul>
+            	</div>	
+            	<div class="info">
+            		<b>Info:</b>&nbsp; Powerful course of CSH basics. <a href="#">Read</a>
+            	</div>	
+            	
+            </p>
+          
+        </div>
+    </div>
+   <!--<div class="group">
+        <h3>Mac IOS</h3>
+        <div class="openclose">
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+        </div>
+   </div>-->
+</div>
+ 
+ 
+</body>
+</html>

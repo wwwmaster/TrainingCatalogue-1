@@ -1,30 +1,382 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML">
 <html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html;  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/layout.css">
- </head>
- <body> 
+	<head>
+		<meta charset="utf-8">
+		<link href="css/cupertino/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.js"></script>
+		<script src="js/jquery-ui-1.9.2.custom.js"></script>
+				
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+	
+<!-- 		<script src="js/menu.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type='text/javascript' src='js/topmenu/jquery.hoverIntent.minified.js'></script>
+  		<script type='text/javascript' src='js/topmenu/jquery.dcmegamenu.1.3.3.js'></script>
+  		<link href="css/topmenu/dcmegamenu.css" rel="stylesheet" type="text/css" />
+ 		<link href="css/topmenu/light_blue.css" rel="stylesheet" type="text/css" />
+		 -->
+		<!-- Vlad philes-->
+		<script src="js/hotTrainings.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/hotTrainings.css">
+		<!-- Yuriy philes-->
+		<script src="js/categories.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/categories.css">
+		<!-- Volodia philes-->
+		<script src="js/toptrainings.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/toptrainings.css">
+		
+		
+	</head>
+<body> 
 <div class='body'> 
 	<div class="main"> 
-	
+		
 		<div class='header'>
 			<div class='logo'>
 			</div>
-			<div class='menu'>		
+			<div class='menu'>
+				<!-- Menu -->
+		<ul id="menu">
+			<li><a href="#">Інтернет технології</a>
+				<ul>
+					<li><a href="#">HTML & CSS</a>
+						<ul>
+							<li><a href="#">Створення сайта по стандарту W3C і перехід до HTML5</a></li>
+							<li><a href="#">Кросбраузерна верстка та основи юбюзабіліті</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Java Script</a>
+						<ul>
+							<li><a href="#">Основи веб програмування</a></li>
+							<li><a href="#">Розширенні можливості JavaScript</a></li>
+						</ul>
+					</li>
+					<li><a href="#">XML & XLST</a></li>
+					<li><a href="#">MySQL</a></li>
+					<li><a href="#">Проектування безпеки сайтів</a></li>
+					<li><a href="#">Веб дизайн</a></li>
+					<li><a href="#">Просування та оптимізація сайтів</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Маркетинг та просування</a>
+				<ul>
+					<li><a href="#">Мережевий маркетинг</a></li>
+					<li><a href="#">Коучинг в мережевому маркетингу</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Комунікаційні тренінги</a> 
+				<ul>
+					<li><a href=""#>Алгоритм проведення інформаційної зустрічі</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Продаж</a>
+				<ul>
+					<li><a href="#">Основи неминучих продажів</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Тренінги особистості</a>
+				<ul>
+					<li><a href="#">Шлях лідера</a></li>
+					<li><a href="#">Школа бізнесмена</a></li>
+					<li><a href="#">Мотивація і управління людьми</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Галузеві тренінги</a>
+				<ul>
+					<li><a href="#">Професійна підготовка мережевиків</a></li>
+					<li><a href="#">Професіонал мережевого бізнесу</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Менеджмент</a>
+				<ul>
+					<li><a href="#">Управління командою</a></li>
+					<li><a href="#">Управління персоналом</a></li>
+				</ul>
+			</li>
+		</ul> 
+
+<!--My menu-->		
 			</div>
 			<div class='menu1'>
+				
+				<div class="light-blue">  
+<ul id="mega-menu-8" class="mega-menu">
+	<li><a href="index.html" class="half-radius">Home</a></li>
+	<li><a href="#">News</a></li>
+	<li><a href="#">Trainings</a>
+		<ul>
+			<li><a href="#">RIA</a>
+				<ul>
+					<li><a href="#">Pyton</a></li>
+					<li><a href="#">Ruby</a></li>
+					<li><a href="#">Php</a></li>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Java</a>
+			    <ul>
+					<li><a href="#">Basics</a></li>
+					<li><a href="#">OOP</a></li>
+					<li><a href="#">Patterns</a></li>
+					<li><a href="#">Frameworks</a></li>
+					<li><a href="#">Android</a></li>
+					<li><a href="#">Spring</a></li>
+				</ul>
+			</li>
+			<li><a href="#">С#</a>
+			    <ul>
+					<li><a href="#">Basics</a></li>
+					<li><a href="#">OOP</a></li>
+					<li><a href="#">NET Framework 4.5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">iOS</a>
+			    <ul>
+					<li><a href="#">Objective C basics</a></li>
+					<li><a href="#">Practice</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Management</a>
+			  <ul>
+				<li><a href="#">Management tasks</a></li>
+					<li><a href="#">Best "triks"</a></li>
+			  </ul>
+			</li>
+		</ul>
+	</li>
+	
+<li><a href="#">About Us</a></li>
+
+<li><a href="#">Contact us</a></li>
+</ul>
+</div>
+				
 			</div>
 		</div>
 		
 		<div class='central'>
 			<div class='central_top'>
-				<div class='hot_train'>			</div>
-				<div class='top_train'>			</div>
-			</div>
+				<div id="hotTrainings">
+					<h1>Hot trainings</h1>
+ 					<button id="button">Show/Close all sections</button>
+					<div id="accordion">
+					
+					    <div class="group">
+					        <h3>JavaScript <b title="New Training!" class="ui-icon ui-icon-flag"></b> &nbsp; 
+					        	<i class="time">Time remaining: 01:10:45 </i> </h3>
+							 		
+								    		
+					        <div class="openclose">
+					            <p>
+					            	<h3>Javascript training 
+					            	
+					            	</h3>
+					            	
+					            	<div class="teacher">
+					            		<b>Techer:</b>
+					            		<!--<img src="img/f1.jpg">-->Vasyl Lupynis<img height="30px" width="30px" src="img/f1.jpg">
+					            	</div>	
+					            	<div class="divRaiting">
+					            		<b>Raiting:</b>
+						            		<ul class="star" >
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		
+						            		</ul>
+					            	</div>	
+					            	<div class="info">
+					            		<b>Info:</b>&nbsp; Powerful course of JavaScript basics. <a href="#">Read</a>
+					            	</div>		
+					            		</p>
+					        </div>
+					    </div>
+					    <div class="group">
+					        <h3>Java  
+					        	<i class="time">Time remaining: 01:10:45 </i></h3>
+					        <div class="openclose">
+					            <p>
+					            	<h3>Java training 
+					            	
+					            	</h3>
+					            	
+					            	<div class="teacher">
+					            		<b>Techer:</b>
+					            		<!--<img src="img/f1.jpg">-->Yaroslav Harasym<img height="30px" width="30px" src="img/gar.jpg">
+					            	</div>	
+					            	<div class="divRaiting">
+					            		<b>Raiting:</b>
+						            		<ul class="star" >
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		
+						            		</ul>
+					            	</div>	
+					            	<div class="info">
+					            		<b>Info:</b>&nbsp; Powerful course of Java basics. <a href="#">Read</a>
+					            	</div>		
+					            	 </p>
+					        </div>
+					    </div>
+					    <div class="group">
+					        <h3>Objective-C 
+					        	<i class="time">Time remaining: 01:10:45 </i></h3>
+					        <div class="openclose">
+					            <p>
+					            	
+					            	<h3>Objective-C training 
+					            	
+					            	</h3>
+					            	
+					            	<div class="teacher">
+					            		<b>Techer:</b>
+					            		<!--<img src="img/f1.jpg">-->Andriy Korkuna<img height="30px" width="30px" src="img/gar.jpg">
+					            	</div>	
+					            	<div class="divRaiting">
+					            		<b>Raiting:</b>
+						            		<ul class="star" >
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		
+						            		</ul>
+					            	</div>	
+					            	<div class="info">
+					            		<b>Info:</b>&nbsp; Powerful course of Objective-C basics. <a href="#">Read</a>
+					            	</div>	
+					            	
+					            </p>
+					          
+					        </div>
+					    </div>
+					    <div class="group">
+					        <h3>CSH  &nbsp; 
+					        	<i class="time">Time remaining: 01:10:45 </i></h3>
+					        <div class="openclose">
+					            <p>
+					            	
+					            	<h3>CSH training 
+					            	
+					            	</h3>
+					            	
+					            	<div class="teacher">
+					            		<b>Techer:</b>
+					            		<!--<img src="img/f1.jpg">-->Ihor Kohut<img height="30px" width="30px" src="img/gar.jpg">
+					            	</div>	
+					            	<div class="divRaiting">
+					            		<b>Raiting:</b>
+						            		<ul class="star" >
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		<li class="ui-state-default ui-corner-all" >
+							            			<span class="ui-icon ui-icon-star"></span>
+							            		</li>
+							            		
+						            		</ul>
+					            	</div>	
+					            	<div class="info">
+					            		<b>Info:</b>&nbsp; Powerful course of CSH basics. <a href="#">Read</a>
+					            	</div>	
+					            	
+					            </p>
+					          
+					        </div>
+					    </div>
+					</div>
+				</div>				
+			<div id="topTrainings" class="ui-corner-all">
 			
-			<div class='central_bottom'>			</div>
+								<h2>Top trainings:</h2>
+								<div class="movediv ui-state-default ui-corner-all">
+									<p>C++ for dummies</p>
+									<div class="fright">
+										<span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+										</span>
+										<br>
+										256 votes
+									</div>	
+								</div>
+								<div class="movediv ui-state-default ui-corner-all">
+									<p>Time-management</p>
+									<div class="fright">
+										<span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+										</span>
+										<br>
+										115 votes
+									</div>	
+								</div>
+								<div class="movediv ui-state-default ui-corner-all">
+									<p>jQuery for ninjas</p>
+									<div class="fright">
+										<span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+											<span class="ui-icon ui-icon-star"></span>
+										</span>
+										<br>
+										85 votes
+									</div>	
+								</div>
+							</div>
+		</div>
+			
+		<div class='central_bottom'>			</div>
 			
 		</div>
 		

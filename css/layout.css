@@ -44,45 +44,45 @@ background-color:red;
 
 .central
 {
-float:none;
+/*float:none;*/
 width:1024px;
 height:675px;
 background-color:white;
 }
 .central_top
 {
-float:left;
+/*float:left;*/
 width:1024px;
-height:350px;
-background-color:green;
+/*height:350px;*/
 }
 
-.top_train
-{
-float:left;
-width:500px;
-height:350px;
-background-color:pink;
-
-}
-.hot_train
+#topTrainings
 {
 float:right;
-width:524px;
+/*margin-left: 550px;*/
+width:420px;
 height:350px;
+}
+#hotTrainings
+{
+float:left;
+margin-left: 25px;
+width:524px;
+/*height:350px;*/
 background-color:white;
 
 }
 .central_bottom
 {
+clear: both;
 float:left;
 width:1024px;
 height:325px;
-background-color:blue;
+/*background-color:blue;*/
 }
 .basement
 {
 width:1024px;
 height:75px;
-background-color:#cdf;
+/*background-color:#cdf;*/
 }

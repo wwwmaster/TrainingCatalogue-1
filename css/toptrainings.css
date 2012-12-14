@@ -1,0 +1,26 @@
+#topTrainings {
+	padding: 15px 20px 0px 0px;
+	text-align: center;
+}
+#topTrainings div span {
+	display: inline-block;
+}
+#topTrainings div {
+	display: block;
+	position:relative;
+	text-align: left;
+	padding: 0px 0px 0px 15px;
+	margin-top: 10px;
+	cursor: hand;
+}
+#topTrainings div p {
+	font-size: 18px;
+	line-height: 18px;
+	display: inline-block;
+	text-align: center;
+}
+#topTrainings .fright {
+	width: 100px;
+	float: right;
+	text-align: center;
+}

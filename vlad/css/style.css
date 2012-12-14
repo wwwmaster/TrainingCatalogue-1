@@ -1,0 +1,116 @@
+body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	#accordion
+	{
+		width:500px;
+	}
+	#accordion ul
+	{
+		list-style: none;
+	}
+	#accordion img 
+	{
+		margin-left:10px;
+	}
+	.divRaiting
+	{
+		position: relative;
+		top:-10px;
+	}
+	.star
+	{
+		position:relative;
+		top:-12px;
+	}
+	.star li
+	{
+		float: left;
+		position:relative;
+		top:-15px;
+		left:2px;
+		margin-left:1px;
+		
+		
+	}
+	.teacher
+	{
+		position:relative;
+		top:-20px;
+		
+		
+	}
+	.teacher img
+	{
+		position:relative;
+		top:10px;
+	}
+	.ui-icon-clock
+	{
+		position:relative;
+		top:-16px;
+		left:84px;
+		
+	} 
+	
+	.clock
+	{
+		position:relative;
+		top:-26px;
+		left:64px;
+		width: 200px;
+		
+	} 
+	.time
+
+	{
+		
+		font-size:12px;
+		font-weight: 300;
+		display: none;
+	}
+	
+	.info
+	{
+		
+		position:relative;
+		left:-134px;
+		top:-12px;
+	}
+	.ui-icon-flag
+	{
+		/*position: absolute;*/	
+		float:left;
+	}

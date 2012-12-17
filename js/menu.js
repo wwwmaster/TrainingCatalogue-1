@@ -1,8 +1,4 @@
-$(document).ready(function($){
-	
-	$('#mega-menu-8').dcMegaMenu({
-		rowItems: '3',
-		speed: 'fast',
-		effect: 'slide'
-	});
+$(document).ready(function($){	
+	$( "#menu" ).menu({ icons: { submenu: "ui-icon-carat-1-s" } });
+	$( "#menu" ).menu( "option", "position", { my: "left top", at: "right-90 top+35" } );
 });

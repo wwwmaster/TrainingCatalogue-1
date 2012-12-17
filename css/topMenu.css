@@ -1,0 +1,29 @@
+.ui-menu .ui-menu { margin-top: -3px; position: absolute;}
+.ui-menu:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.ui-menu .ui-menu-item { 
+	display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    width: auto; 
+    font-size: 14px;}
+.vertikator {
+	text-align: center;
+	width: 120px;
+	position: absolute;
+	top: 150px;
+	right: 75px;
+	clear: both;
+	z-index: 11;
+}
+
+.vertikator li a{
+	width: 100px;
+}
